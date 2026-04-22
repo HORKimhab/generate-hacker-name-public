@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Keep CSS, JS, icons, and manifests crawlable so search engines can render the page correctly.
+Allow: /generate-hacker-name.css
+Allow: /generate-hacker-name.js
+Allow: /favicon.svg
+Allow: /site.webmanifest
+
+Sitemap: https://horkimhab.github.io/generate-hacker-name/sitemap.xml

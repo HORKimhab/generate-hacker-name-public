@@ -61,9 +61,72 @@ body::after {
   gap: 36px;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  background: #031003;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 10px 14px;
+  text-decoration: none;
+  z-index: 1001;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
 header {
   text-align: center;
   width: 100%;
+}
+
+.top-nav,
+.breadcrumb-nav {
+  width: 100%;
+  background: rgba(0, 255, 65, 0.03);
+  border: 1px solid var(--border);
+  padding: 14px 18px;
+}
+
+.top-nav ul,
+.breadcrumb-nav ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav a,
+.breadcrumb-nav a,
+.seo-panel a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.top-nav a:hover,
+.breadcrumb-nav a:hover,
+.seo-panel a:hover {
+  text-shadow: var(--glow);
+}
+
+.breadcrumb-nav {
+  font-size: 12px;
+  color: #00cc30;
+}
+
+.breadcrumb-nav li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb-nav li + li::before {
+  content: "/";
+  color: var(--dim-green);
 }
 
 .sys-label {
@@ -456,6 +519,33 @@ footer {
 
 .seo-list li {
   line-height: 1.7;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.related-card {
+  border: 1px solid var(--border);
+  padding: 16px;
+  background: rgba(0, 255, 65, 0.02);
+}
+
+.related-card h3 {
+  font-size: 14px;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.related-card p {
+  margin: 0 0 10px;
+}
+
+.mini-note {
+  font-size: 12px;
+  color: var(--dark-green);
 }
 
 .faq-panel {

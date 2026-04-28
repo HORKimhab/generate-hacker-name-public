@@ -3,7 +3,7 @@ Allow: /
 
 # Keep CSS, JS, icons, and manifests crawlable so search engines can render the page correctly.
 Allow: /generate-hacker-name.css
-Allow: /generate-hacker-name.js
+Allow: /generate-hacker-name.protected.js
 Allow: /favicon.svg
 Allow: /site.webmanifest
 

@@ -1,6 +1,6 @@
 {
-  "name": "Alias Forge",
-  "short_name": "Alias Forge",
+  "name": "Generate hacker name",
+  "short_name": "Generate hacker name",
   "description": "Generate hacker names, hacker aliases, cyberpunk handles, and anonymous nicknames.",
   "start_url": "./",
   "display": "standalone",
